@@ -1,7 +1,7 @@
 <?php
 /**
- * Copyright © 2016 Magento. All rights reserved.
- * See COPYING.txt for license details.
+ * @author    Mediotype Development <diveinto@mediotype.com>
+ * @copyright 2018 Mediotype. All Rights Reserved.
  */
 
 namespace Mediotype\Employee\Setup;
@@ -30,8 +30,12 @@ class InstallData implements InstallDataInterface
             [
                 'email' => 'joel@mediotype.com',
                 'firstname' => 'Joel',
-                'middlename' => '',
-                'lastname' => 'Hart'
+                'lastname' => 'Hart',
+                'position' => '0',
+                'hire_date' => '',
+                'termination_date' => '',
+                'picture' => '',
+                'certifications' => '',
             ]
         ];
 
