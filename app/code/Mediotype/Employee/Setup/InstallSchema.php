@@ -17,9 +17,47 @@ use Magento\Framework\DB\Adapter\AdapterInterface;
 class InstallSchema implements InstallSchemaInterface
 {
     /**
-    * {@inheritdoc}
-    * @SuppressWarnings(PHPMD.ExcessiveMethodLength)
-    */
+     * Installation Schema is used for adding, updating or removing tables, columns, indexers, etc from your database.
+     * When attempting to connect to Magento's database you need to be sure to add SchemaSetupInterface and
+     * ModuleContextInterface as arguments to your install method.
+     *
+     * The SchemaSetupInterface allows you the ability to connect to the database and run functions such as
+     * getTable(), newTable(), addColumn(), changeColumn() etc.
+     *
+     * The ModuleContextInterface which is not typically used in the installation of a module is used for version
+     * control of your module and determining when a part of your script should run.
+     *
+     * In our example below we have we get a connection to the database using the SchemaSetupInterface and connect
+     * to it by calling the getConnect() method. By getting a connection object we now have access to its methods
+     * such as newTable(). Inside of newTable() we pass in the argument 'mediotype_employees' which will be the name
+     * of our custom table and we start adding columns to it.
+     *
+     * In order to add columns to a table you need to make sure you supply it with the correct arguments. The
+     * addColumn() method accepts name, type, size, arguments and comment parameters.
+     *
+     * Name: The name of the column you want defined in your table.
+     *
+     * Type: The type that the column should be assigned to hold the correct type of data. This could be a blob,
+     * decimal, varhar, etc.
+     *
+     * Size: Depending on the type of column you're trying to add it may be wise to include a size. If you are adding
+     * an Integer to the database you might know how big that field should be. On the other hand you might not want
+     * to set a limit on something like a Boolean type, in which case we leave the value as null.
+     *
+     * Arguments: These can be any number of things that affect your column such as primary, nullable, unsigned, etc.
+     * These arguments help you define if your column is the primary key, an unsigned integer or a field that can
+     * be null.
+     *
+     * Comment: Self explanatory, it allows you to add a comment to the column in the database.
+     *
+     * Finally after all of this we call our SchemaSetupInterface object again and call createTable() to start the
+     * sequence of actually creating the table after setting all of this data on the object.
+     *
+     * To end our session we call endSetup() which set our sql mode and foreign key checks.
+     *
+     * {@inheritdoc}
+     * @SuppressWarnings(PHPMD.ExcessiveMethodLength)
+     */
     public function install(SchemaSetupInterface $setup, ModuleContextInterface $context): void
     {
         $installer = $setup;
