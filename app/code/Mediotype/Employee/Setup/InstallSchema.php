@@ -1,7 +1,7 @@
 <?php
 /**
  * @author    Mediotype Development <diveinto@mediotype.com>
- * @copyright 2018 Mediotype. All Rights Reserved.
+ * @copyright 2019 Mediotype. All Rights Reserved.
  */
 
 namespace Mediotype\Employee\Setup;

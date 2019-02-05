@@ -2,7 +2,7 @@
 <!--
 /**
  * @author    Mediotype Development <diveinto@mediotype.com>
- * @copyright 2018 Mediotype. All Rights Reserved.
+ * @copyright 2019 Mediotype. All Rights Reserved.
  */
 -->
 <!-- Used to register the module with Magento by defining a <config> that points to the module.xsd schema so we know
