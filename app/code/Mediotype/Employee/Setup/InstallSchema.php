@@ -18,12 +18,12 @@ use Magento\Framework\DB\Adapter\AdapterInterface;
 class InstallSchema implements InstallSchemaInterface
 {
     /**
-     * Installation Schema is used for adding, updating or removing tables, columns, indexers, etc from your database.
+     * Installation Schema is used for adding tables, columns, indexers, etc to your database.
      * When attempting to connect to Magento's database you need to be sure to add SchemaSetupInterface and
      * ModuleContextInterface as arguments to your install method.
      *
      * The SchemaSetupInterface allows you the ability to connect to the database and run functions such as
-     * getTable(), newTable(), addColumn(), changeColumn() etc.
+     * getTable(), newTable(), addColumn() etc.
      *
      * The ModuleContextInterface which is not typically used in the installation of a module is used for version
      * control of your module and determining when a part of your script should run.
