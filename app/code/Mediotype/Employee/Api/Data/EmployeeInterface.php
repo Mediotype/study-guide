@@ -12,8 +12,6 @@ use Magento\Framework\Api\ExtensibleDataInterface;
  * The EmployeeInterface is data interface for the API which helps preserve data integrity. It exposes endpoints
  * for getting and setting all of the various columns and data associated with an employee entity.
  *
- * Interface EmployeeInterface
- * @package Mediotype\Employee\Api\Data
  * @api
  */
 interface EmployeeInterface extends ExtensibleDataInterface
@@ -44,7 +42,7 @@ interface EmployeeInterface extends ExtensibleDataInterface
      * Set id
      *
      * @param int $id
-     * @return $this
+     * @return \Mediotype\Employee\Api\Data\EmployeeInterface
      */
     public function setId($id);
 
@@ -59,7 +57,7 @@ interface EmployeeInterface extends ExtensibleDataInterface
      * Set email address
      *
      * @param string $email
-     * @return $this
+     * @return \Mediotype\Employee\Api\Data\EmployeeInterface
      */
     public function setEmail($email);
 
@@ -74,7 +72,7 @@ interface EmployeeInterface extends ExtensibleDataInterface
      * Set first name
      *
      * @param string $firstname
-     * @return $this
+     * @return \Mediotype\Employee\Api\Data\EmployeeInterface
      */
     public function setFirstname($firstname);
 
@@ -89,7 +87,7 @@ interface EmployeeInterface extends ExtensibleDataInterface
      * Set last name
      *
      * @param string $lastname
-     * @return $this
+     * @return \Mediotype\Employee\Api\Data\EmployeeInterface
      */
     public function setLastname($lastname);
 
@@ -104,7 +102,7 @@ interface EmployeeInterface extends ExtensibleDataInterface
      * Set position
      *
      * @param int $position
-     * @return $this
+     * @return \Mediotype\Employee\Api\Data\EmployeeInterface
      */
     public function setPosition($position);
 
@@ -119,7 +117,7 @@ interface EmployeeInterface extends ExtensibleDataInterface
      * Set hire date
      *
      * @param string $hireDate
-     * @return $this
+     * @return \Mediotype\Employee\Api\Data\EmployeeInterface
      */
     public function setHireDate($hireDate);
 
@@ -134,7 +132,7 @@ interface EmployeeInterface extends ExtensibleDataInterface
      * Set termination date
      *
      * @param string $terminationDate
-     * @return $this
+     * @return \Mediotype\Employee\Api\Data\EmployeeInterface
      */
     public function setTerminationDate($terminationDate);
 
@@ -149,7 +147,7 @@ interface EmployeeInterface extends ExtensibleDataInterface
      * Set picture
      *
      * @param string $picture
-     * @return $this
+     * @return \Mediotype\Employee\Api\Data\EmployeeInterface
      */
     public function setPicture($picture);
 
@@ -164,7 +162,7 @@ interface EmployeeInterface extends ExtensibleDataInterface
      * Set certifications
      *
      * @param array $certifications
-     * @return $this
+     * @return \Mediotype\Employee\Api\Data\EmployeeInterface
      */
     public function setCertifications($certifications);
 
@@ -179,7 +177,7 @@ interface EmployeeInterface extends ExtensibleDataInterface
      * Set created at time
      *
      * @param string $createdAt
-     * @return $this
+     * @return \Mediotype\Employee\Api\Data\EmployeeInterface
      */
     public function setCreatedAt($createdAt);
 
@@ -194,7 +192,7 @@ interface EmployeeInterface extends ExtensibleDataInterface
      * Set updated at time
      *
      * @param string $updatedAt
-     * @return $this
+     * @return \Mediotype\Employee\Api\Data\EmployeeInterface
      */
     public function setUpdatedAt($updatedAt);
 }
