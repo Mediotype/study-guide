@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author    Mediotype Development <diveinto@mediotype.com>
+ * @copyright 2019 Mediotype. All Rights Reserved.
+ */
+-->
+<!-- Used to register the module with Magento by defining a <config> that points to the module.xsd schema so we know
+how to validate the XML schema. We then add a child <module> node inside of <config> to allow us to define our
+module in specific.
+
+A <module> node should always contain *name* and *setup_version* this will indicate two things to Magento:
+1. The module name, normally setup as *Package_Module*. What this means is that the *Package* is the parent directory
+to the module, usually the first directory you see inside of app/code. The second portion *Module* is what you
+would call your module.In our case Mediotype is the parent or first folder inside app/code and Employee is the
+module that is going to be running.
+
+2. The module's setup_version. This indicates in the setup_module table what version the module is. This helps in
+the event that we want to upgrade our module with bug fixes or new features so Magento knows that something
+has changed and can update the module accordingly (via setup scripts, etc).
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="Mediotype_Employee" setup_version="0.0.1">
+    </module>
+</config>
