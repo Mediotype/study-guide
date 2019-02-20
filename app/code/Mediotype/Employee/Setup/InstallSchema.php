@@ -63,12 +63,13 @@ class InstallSchema implements InstallSchemaInterface
     {
         $installer = $setup;
         $installer->startSetup();
+        $tableName = 'mediotype_employee';
 
         /**
         * Create table 'mediotype_employee'
         */
         $table = $setup->getConnection()
-            ->newTable($setup->getTable('mediotype_employee'))
+            ->newTable($setup->getTable($tableName))
             ->addColumn(
                 'employee_id',
                 Table::TYPE_INTEGER,
