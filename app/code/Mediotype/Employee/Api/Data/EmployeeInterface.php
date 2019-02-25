@@ -30,6 +30,7 @@ interface EmployeeInterface extends ExtensibleDataInterface
     const CERTIFICATIONS = 'certifications';
     const CREATED_AT = 'created_at';
     const UPDATED_AT = 'updated_at';
+    const GENDER = 'gender';
 
     /**
      * Get id
