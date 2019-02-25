@@ -32,7 +32,7 @@ class UpgradeData implements UpgradeDataInterface
 
         /**
          * Here we check if our module is of version 0.0.2 then update our Joel Hart record. If the version
-         * of our module is less than 0.0.2 version_compare will return -1 and we will know that we need to
+         * of our module is less than 0.0.2 version_compare will return a boolean and we will know that we need to
          * run the following updates.
          */
         if (version_compare($context->getVersion(), '0.0.2', '<')) {
