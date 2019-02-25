@@ -195,4 +195,19 @@ interface EmployeeInterface extends ExtensibleDataInterface
      * @return \Mediotype\Employee\Api\Data\EmployeeInterface
      */
     public function setUpdatedAt($updatedAt);
+
+    /**
+     * Get employee gender
+     *
+     * @return string|null
+     */
+    public function getGender();
+
+    /**
+     * Set employee gender
+     *
+     * @param int $gender
+     * @return \Mediotype\Employee\Api\Data\EmployeeInterface
+     */
+    public function setGender($gender);
 }
