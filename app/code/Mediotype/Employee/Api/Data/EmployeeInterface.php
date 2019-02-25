@@ -33,6 +33,12 @@ interface EmployeeInterface extends ExtensibleDataInterface
     const GENDER = 'gender';
 
     /**
+     * Constants for gender values
+     */
+    const GENDER_MALE = 1;
+    const GENDER_FEMALE = 2;
+
+    /**
      * Get id
      *
      * @return int|null
