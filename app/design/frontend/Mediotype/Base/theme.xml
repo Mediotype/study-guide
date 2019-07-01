@@ -1,0 +1,10 @@
+<!--
+/**
+ * @author    Mediotype Development <diveinto@mediotype.com>
+ * @copyright 2019 Mediotype. All Rights Reserved.
+ */
+-->
+<theme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Config/etc/theme.xsd">
+    <title>Mediotype Base</title>
+    <parent>Magento/luma</parent>
+</theme>

@@ -1,0 +1,5 @@
+<config>
+    <extension_attributes for="Magento\Customer\Api\Data\CustomerInterface">
+        <attribute code="is_murphys_mustache" type="boolean"/>
+    </extension_attributes>
+</config>
